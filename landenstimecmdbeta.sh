@@ -1,0 +1,2 @@
+thetime=$(date)
+echo $thetime
