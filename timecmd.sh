@@ -1,28 +1,15 @@
+#Initializing the main variables
+thetime=$(date)
+#Using the main variables
+echo $thetime
 #Declaring our random message array
-array[0]="hello"
-array[1]="hi"
-array[2]="bonjour"
-array[3]="hola"
+array[0]="You should go take a walk"
+array[1]="A trip to the gym sounds nice"
+array[2]="Clean up your room"
+array[3]="Try reading a book"
+array[4]="Do you have any friends"
 #Declaring more variables for the random message array
 size=${#array[@]}
 index=$(($RANDOM % $size))
 #Using our new "random message" variables
 echo ${array[$index]}
-#Initializing the main variables
-thetime=$(date)
-#Using the main variables
-echo $thetime
-
-#Now im bullying you...
-tiparray[0]="When was the last time you've seen the sun?"
-tiparray[1]="You should read a book...just saying"
-tiparray[2]="Clean your room"
-tiparray[3]="You should talk a walk"
-tiparray[4]="Do you have any friends?"
-tiparray[5]="Go take a shower"
-tiparray[6]="A trip to the gym sounds fun"
-#Repeating the same process
-tipsize=${tiparray[@]}
-tipindex=$(($RANDOM % $tipsize))
-#Get bullied nerd
-echo ${tiparray[$index]}
