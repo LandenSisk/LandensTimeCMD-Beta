@@ -22,7 +22,7 @@ tiparray[4]="Do you have any friends?"
 tiparray[5]="Go take a shower"
 tiparray[6]="A trip to the gym sounds fun"
 #Repeating the same process
-tipsize=${array[@]}
+tipsize=${tiparray[@]}
 tipindex=$(($RANDOM % $tipsize))
 #Get bullied nerd
-echo ${array[$index]}
+echo ${tiparray[$index]}
