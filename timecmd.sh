@@ -2,6 +2,8 @@
 thetime=$(date)
 #Using the main variables
 echo $thetime
+#Wait command
+sleep 1
 #Declaring our random message array
 array[0]="You should go take a walk"
 array[1]="A trip to the gym sounds nice"
